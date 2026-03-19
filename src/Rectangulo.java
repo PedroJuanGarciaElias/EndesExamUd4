@@ -1,4 +1,4 @@
-public class Rectangulo {
+public class Rectangulo implements Calculos {
 
     private double ancho;
     private double alto;
@@ -8,10 +8,12 @@ public class Rectangulo {
         this.alto = alto;
     }
 
+    @Override
     public double calcularArea() {
         return getAncho() * getAlto();
     }
 
+    @Override
     public double calcularPerimetro() {
         return 2 * getAncho() + 2 * getAlto();
     }

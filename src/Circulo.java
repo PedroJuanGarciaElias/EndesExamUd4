@@ -1,4 +1,4 @@
-public class Circulo {
+public class Circulo implements Calculos {
 
     private double radio;
 
@@ -6,10 +6,12 @@ public class Circulo {
         this.setRadio(radio);
     }
 
+    @Override
     public double calcularArea() {
         return 3.1416 * getRadio() * getRadio();
     }
 
+    @Override
     public double calcularPerimetro() {
         return 2 * 3.1416 * getRadio();
     }
