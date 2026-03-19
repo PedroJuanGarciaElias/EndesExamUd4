@@ -10,19 +10,23 @@ public class GestorFiguras {
 
     private final ArrayList<Object> figuras;
 
+    //Crea una instancia de figuras
     public GestorFiguras() {
         figuras = new ArrayList<>();
     }
 
+    /**
+     * @param figura agrega un elemento a la lista Figuras.
+     */
     public void agregarFigura(Object figura) {
         getFiguras().add(figura);
     }
 
+    //Imprime todas las areas de los elementos contenidos en la lista
     public void mostrarAreas() {
 
         for (Object figura : getFiguras()) {
 
-            // horrible uso de instanceof
             if (figura instanceof Circulo circulo) {
                 System.out.println("Area circulo: " + circulo.calcularArea());
             }
@@ -37,6 +41,7 @@ public class GestorFiguras {
         }
     }
 
+    //Imprime todos los perímetros de los elementos contenidos en la lista
     public void mostrarPerimetros() {
 
         for (Object figura : getFiguras()) {
@@ -55,6 +60,7 @@ public class GestorFiguras {
         }
     }
 
+    //Dibuja todas las instancias
     public void dibujarTodo() {
 
         for (Object figura : getFiguras()) {
@@ -73,6 +79,7 @@ public class GestorFiguras {
         }
     }
 
+    //Devuelve la lista
     public ArrayList<Object> getFiguras() {
         return figuras;
     }
