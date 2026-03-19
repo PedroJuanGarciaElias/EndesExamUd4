@@ -1,4 +1,6 @@
-public class Triangulo {
+package model;
+
+public class Triangulo implements Calculos{
 
     private double base;
     private double altura;
@@ -14,10 +16,12 @@ public class Triangulo {
         this.setLado3(lado3);
     }
 
+    @Override
     public double calcularArea() {
         return (getBase() * getAltura()) / 2;
     }
 
+    @Override
     public double calcularPerimetro() {
         return getLado1() + getLado2() + getLado3();
     }

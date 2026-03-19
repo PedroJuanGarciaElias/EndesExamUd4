@@ -1,3 +1,5 @@
+package model;
+
 public class Rectangulo implements Calculos {
 
     private double ancho;

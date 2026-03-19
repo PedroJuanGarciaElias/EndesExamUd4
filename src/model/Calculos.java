@@ -1,3 +1,5 @@
+package model;
+
 interface Calculos {
 
     double calcularArea();
