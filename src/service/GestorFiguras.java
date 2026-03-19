@@ -1,4 +1,8 @@
-package model;
+package service;
+
+import model.Circulo;
+import model.Rectangulo;
+import model.Triangulo;
 
 import java.util.ArrayList;
 

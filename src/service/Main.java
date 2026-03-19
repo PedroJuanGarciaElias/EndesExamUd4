@@ -1,7 +1,6 @@
 package service;
 
 import model.Circulo;
-import model.GestorFiguras;
 import model.Rectangulo;
 import model.Triangulo;
 
